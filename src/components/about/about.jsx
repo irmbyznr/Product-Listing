@@ -5,9 +5,9 @@ import about from "../../assets/img/about.svg";
 const About = () => {
   return (
     <section className="lg:pt-64 pt-32 container mx-auto  h-screen ">
-      <div className="px-4  flex justify-center items-center flex flex-col lg:flex-row">
-        <Image src={about} className="h-80" alt="about" />
-        <p className="pb-10 ">
+      <div className="px-4 grid grid-rows-1 lg:grid-cols-2 ">
+        <Image src={about} className="lg:h-80 h-60" alt="about" />
+        <p>
           Welcome to [Website Name], your ultimate destination for high-quality
           products and exceptional service. At [Website Name], we&apos;re passionate
           about providing our customers with the best selection of products to
