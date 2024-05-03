@@ -5,7 +5,7 @@ const ProductDetails = ({ product }) => {
   const { title, price, description, category, image } = product;
   return (
     <section className="pt-32 h-screen container mx-auto">
-      <div className="pb-10 gap-2 px-10 flex flex-col items-center justify-center">
+      <div className="pb-10 gap-2 px-10 flex flex-col items-center justify-center ">
       <h2 className="pt-4 text-center font-semibold">{title}</h2>
 
 <div className="flex flex-col justify-center items-center gap-3">

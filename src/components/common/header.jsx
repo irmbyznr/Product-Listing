@@ -5,7 +5,7 @@ import logo from "../../assets/img/logo.svg";
 
 const Header = () => {
   return (
-    <section className="fixed left-0 right-0 z-10 ">
+    <section className="fixed left-0 right-0 z-10 bg-white ">
       <nav className="container mx-auto flex flex-col sm:flex-row justify-between items-center bg-white pt-5 px-2">
         <Link href="/" className="flex justify-center items-center">
           <Image src={logo} width={65} priority alt="logo" />

@@ -1,0 +1,24 @@
+.spinner {
+    height: 70vh;
+    > div {
+      height: 70vh;
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid white;
+      border-top: 2px solid rgba(0, 0, 0, 0.438);
+      animation: spin 1s linear infinite;
+      background-color: #d45029;
+  
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+  

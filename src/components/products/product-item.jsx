@@ -8,7 +8,7 @@ const ProductsItem = ({ title, price, image, category, id }) => {
   };
   return (
     <div onClick={handleClick}>
-      <div className="flex flex-col items-center px-10 sm:px-0">
+      <div className="flex flex-col items-center px-10 sm:px-0 cursor-pointer">
         <div>
           <img
             src={image}

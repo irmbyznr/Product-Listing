@@ -4,7 +4,7 @@ import about from "../../assets/img/about.svg";
 
 const About = () => {
   return (
-    <section className="pt-32 container mx-auto  h-screen">
+    <section className="lg:pt-64 pt-32 container mx-auto  h-screen ">
       <div className="px-4  flex justify-center items-center flex flex-col lg:flex-row">
         <Image src={about} className="h-80" alt="about" />
         <p className="pb-10 ">
