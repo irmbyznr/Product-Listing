@@ -21,12 +21,12 @@ const CategoryFilter = () => {
   };
 
   const getProductsByCategory = async (category) => {
-    if (!category) return; // Handle empty category case (optional)
+    if (!category) return; // empty category case
     try {
       const response = await axios.get(
         `${config.apiURL}/products/category/${category}`
       );
-      dispatch(setProducts(response.data)); // Initially set sortedProducts to fetched data for category
+      dispatch(setProducts(response.data)); 
     } catch (error) {
       console.error(error);
     }
@@ -34,7 +34,7 @@ const CategoryFilter = () => {
   const handleCategoryChange = (event) => {
     const selectedCat = event.target.value;
     dispatch(setSelectedCategory(selectedCat));
-    getProductsByCategory(selectedCat); // Fetch and update products based on selected category
+    getProductsByCategory(selectedCat); 
   };
   useEffect(() => {
     getProductsByCategory();
